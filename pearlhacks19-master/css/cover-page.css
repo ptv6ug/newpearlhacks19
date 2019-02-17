@@ -1,0 +1,101 @@
+/* unvisited link */
+a:link {
+  color: #4795CE;
+}
+
+/* visited link */
+a:visited {
+  color: #4795CE;
+}
+
+/* mouse over link */
+a:hover {
+  color: #000099;
+}
+
+/* selected link */
+a:active {
+  color: #000099;
+}
+
+body {
+  text-align: center;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.header {
+    padding-top: 50px;
+}
+
+h1 {
+    font-family: 'Rouge Script', serif;
+    font-size: 120px;
+}
+
+h3 {
+    font-family: 'Rosarivo', serif;
+    font-size: 22px;
+    padding-top: 40px;
+}
+
+.nav {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-right: 30px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.pipe {
+    margin: 0px 10px;
+}
+
+input[type=text] {
+   font-family: 'Lato', sans-serif;
+   width: 80%;
+   height: 50px;
+   border: 2px solid #4795CE;
+   border-radius: 4px;
+   background-color: white;
+   background-image: url("../images/iconmonstr-magnifier-1.png");
+   background-position: 6px 7px;
+   background-repeat: no-repeat;
+   padding-left: 50px;
+ }
+
+.hashtag {
+    padding-top: 20px;
+}
+
+.carousel {
+  padding-top: 10px;
+  margin: auto;
+  width:300px;
+  height:300px;
+}
+
+.carousel-item {
+    width:300px;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {...}
+
+Extra (xl) devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {...}
+*/
