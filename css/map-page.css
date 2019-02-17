@@ -1,0 +1,61 @@
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+    font-family: 'Sacramento', serif;
+    font-size: 48px;
+}
+
+.map_page_search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px;
+}
+
+input[type=text] {
+   margin: auto;
+   width: 50%;
+   height: 50px;
+   border: 2px solid red;
+   border-radius: 4px;
+   background-color: white;
+   background-image: url("../images/iconmonstr-magnifier-1.png");
+   background-position: 6px 7px;
+   background-repeat: no-repeat;
+   padding-left: 40px;
+ }
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 15px 0px;
+  width: 10%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {...}
+
+Extra (xl) devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {...}
+*/

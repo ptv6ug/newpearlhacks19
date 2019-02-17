@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Site Title -->
-  <title>You Belong Here - Search</title>
+  <title>Love-Able</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <!-- JQuery-->
@@ -18,182 +17,72 @@
   <!-- map-page External CSS -->
   <link rel="stylesheet" href="css/map-page.css">
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento|Montserrat">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Sacramento|Montserrat">
   <style>
     #map{
       height:650px;
       width:35%;
-      margin-left: 2%;
     }
   </style>
 </head>
 
 <body>
-  <div class="map_page_search">
-    <!-- Search form -->
-    <input type="text" name="search" placeholder="Search..">
+<div class="map_page_search">
+  <!-- Search form -->
+  <input type="text" name="search" placeholder="Search..">
+</div>
+
+<div class="filters">
+  <div>
+    <form>
+      <select id="price" name="price">
+        <option value="low">$0-$25</option>
+        <option value="med">$25-$100</option>
+        <option value="high">$100-$5000</option>
+      </select>
+    </form>
   </div>
-  <div class="content">
-    <div id="map"></div>
-    <div class="info-big-container">
-        <div class="info-container">
-            <div class="information">
-              <div class="image"><img src="images/frame 2.png" alt=""></div>
-              <div class="info">
-                <div class="top-line">
-                  <div class="top-title">Garden of Eve</div>
-				  <p>122 Main St. Chapel Hill, NC</p>
-                  <div class="stars"><img src="images/Stars.png" alt=""></div>
-                  <div class="money"><img src="images/iconmonstr-coin-1.png" alt=""></div>
-                </div>
-                <div class="ratings">
-                  <div class="rating"><div class="rating-title">Accessibility</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Inclusivity</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Enjoyment</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Atmosphere: Family Friendly</div>
-                </div>
-        
-              </div>
-
-            </div>
-                    
-            <div class="testimonial">
-                <p>“such a great time, my gay best friend loved it” <a href="#">Read More</a></p>
-                <p>7 people who identified as Bisexual liked this place.</p>
-              </div>
-        </div>
-
-        <div class="info-container">
-            <div class="information">
-              <div class="image"><img src="images/Frame 3.png" alt=""></div>
-              <div class="info">
-                <div class="top-line">
-                  <div class="top-title">Ellen's Wedding Planning</div>
-				  <p> 333 Octocat Street, Chapel Hill, NC </p>
-				  <div class="stars"><img src="images/Stars.png" alt=""></div>
-                  <div class="money"><img src="images/iconmonstr-coin-1.png" alt=""></div>
-                </div>
-                <div class="ratings">
-                  <div class="rating"><div class="rating-title">Accessibility</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Inclusivity</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Enjoyment</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Atmosphere: Family Friendly</div>
-                </div>
-        
-              </div>
-
-            </div>
-                    
-            <div class="testimonial">
-                <p>“they had accessible parking spaces and a wheelchair ramp” <a href="#">Read More</a></p>
-                <p>3 people who identified as trangender liked this place.</p>
-              </div>
-        </div>
-
-        <div class="info-container">
-            <div class="information">
-              <div class="image"><img src="images/Frame 4.png" alt=""></div>
-              <div class="info">
-                <div class="top-line">
-                  <div class="top-title">Sally & Co. Event Planning</div>
-				  <p> 338 Greenwood Avenue, Chapel Hill, NC </p>
-                  <div class="stars"><img src="images/Stars.png" alt=""></div>
-                  <div class="money"><img src="images/iconmonstr-coin-1.png" alt=""></div>
-                </div>
-                <div class="ratings">
-                  <div class="rating"><div class="rating-title">Accessibility</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Inclusivity</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Enjoyment</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Atmosphere: Family Friendly</div>
-                </div>
-        
-              </div>
-
-            </div>
-                    
-            <div class="testimonial">
-                <p>“she helped me order the best flowers!” <a href="#">Read More</a></p>
-                <p>8 people who identified as Pansexual liked this place.</p>
-              </div>
-        </div>
-
-        <div class="info-container">
-            <div class="information">
-              <div class="image"><img src="images/wedding2.png" alt=""></div>
-              <div class="info">
-                <div class="top-line">
-                  <div class="top-title">Weddings by Pauline</div>
-				  <p> 222 Greenwood Avenue, Chapel Hill, NC </p> 
-                  <div class="stars"><img src="images/Stars.png" alt=""></div>
-                  <div class="money"><img src="images/iconmonstr-coin-1.png" alt=""></div>
-                </div>
-                <div class="ratings">
-                  <div class="rating"><div class="rating-title">Accessibility</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Inclusivity</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Enjoyment</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Atmosphere: Family Friendly</div>
-                </div>
-        
-              </div>
-
-            </div>
-                    
-            <div class="testimonial">
-                <p>“this planner has the best access to caterers”  <a href="#">Read More</a></p>
-                <p>7 people who identified as homosexual liked this place.</p>
-              </div>
-        </div>
-
-        <div class="info-container">
-            <div class="information">
-              <div class="image"><img src="images/wedding.png" alt=""></div>
-              <div class="info">
-                <div class="top-line">
-                  <div class="top-title">Tying the Knot</div>
-				  <p> 129 Alderman Road, Chapel Hill, NC </p>
-                  <div class="stars"><img src="images/Stars.png" alt=""></div>
-                  <div class="money"><img src="images/iconmonstr-coin-1.png" alt=""></div>
-                </div>
-                <div class="ratings">
-                  <div class="rating"><div class="rating-title">Accessibility</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Inclusivity</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Enjoyment</div><div class="bar-border"><div class="bar-progress"></div></div><div class="number">3/5</div></div>
-                  <div class="rating"><div class="rating-title">Atmosphere: Family Friendly</div>
-                </div>
-        
-              </div>
-
-            </div>
-                    
-            <div class="testimonial">
-                <p>“If I ever got married again I would come back here”  <a href="#">Read More</a></p>
-                <p>7 people who identified as Bisexual liked this place.</p>
-              </div>
-        </div>
-
-
-    </div>
-    
-
-    
-
+  <div>
+    <form>
+      <select id="rating" name="rating">
+        <option value="5up">5 stars only</option>
+        <option value="4up">4 stars and up</option>
+        <option value="3up">3 stars and up</option>
+        <option value="2up">2 stars and up</option>
+        <option value="1up">1 star and up</option>
+      </select>
+    </form>
   </div>
+  <div>
+    <form>
+      <select id="atmosphere" name="atmosphere">
+        <option value="ff">family-friendly</option>
+        <option value="rom">romantic</option>
+        <option value="pea">peaceful</option>
+        <option value="21">adult (21+)</option>
+      </select>
+    </form>
+  </div>
+</div>
 
-  <script>
-    function initMap() {
+
+<div id="map"></div>
+<script>
+    function initMap(){
       // Map options
       var options = {
-        zoom: 8,
-        center: { lat: 35.9059944, lng: -79.0541854 }
+        zoom:8,
+        center:{lat:35.9059944,lng:-79.0541854}
       }
 
       // New map
       var map = new google.maps.Map(document.getElementById('map'), options);
 
       // Listen for click on map
-      google.maps.event.addListener(map, 'click', function (event) {
+      google.maps.event.addListener(map, 'click', function(event){
         // Add marker
-        addMarker({ coords: event.latLng });
+        addMarker({coords:event.latLng});
       });
 
       /*
@@ -216,55 +105,55 @@
       // Array of markers
       var markers = [
         {
-          coords: { lat: 42.4668, lng: -70.9495 },
-          iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-          content: '<h1>Lynn MA</h1>'
+          coords:{lat:42.4668,lng:-70.9495},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:'<h1>Lynn MA</h1>'
         },
         {
-          coords: { lat: 42.8584, lng: -70.9300 },
-          content: '<h1>Amesbury MA</h1>'
+          coords:{lat:42.8584,lng:-70.9300},
+          content:'<h1>Amesbury MA</h1>'
         },
         {
-          coords: { lat: 42.7762, lng: -71.0773 }
+          coords:{lat:42.7762,lng:-71.0773}
         }
       ];
 
       // Loop through markers
-      for (var i = 0; i < markers.length; i++) {
+      for(var i = 0;i < markers.length;i++){
         // Add marker
         addMarker(markers[i]);
       }
 
       // Add Marker Function
-      function addMarker(props) {
+      function addMarker(props){
         var marker = new google.maps.Marker({
-          position: props.coords,
-          map: map,
+          position:props.coords,
+          map:map,
           //icon:props.iconImage
         });
 
         // Check for customicon
-        if (props.iconImage) {
+        if(props.iconImage){
           // Set icon image
           marker.setIcon(props.iconImage);
         }
 
         // Check content
-        if (props.content) {
+        if(props.content){
           var infoWindow = new google.maps.InfoWindow({
-            content: props.content
+            content:props.content
           });
 
-          marker.addListener('click', function () {
+          marker.addListener('click', function(){
             infoWindow.open(map, marker);
           });
         }
       }
     }
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOMZUHUqdXfRW3vXJGtl3X7aVH9Hm1ZE&callback=initMap">
-  </script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOMZUHUqdXfRW3vXJGtl3X7aVH9Hm1ZE&callback=initMap">
+</script>
 
 </body>
-
 </html>
