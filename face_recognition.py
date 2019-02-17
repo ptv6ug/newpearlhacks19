@@ -74,7 +74,7 @@ while True:
     if cv2.waitKey(10) & 0xFF == ord('q'): # find a way to time out
         break
 
-websites = ["http://google.com","https://www.amazon.com/","https://www.figma.com/file/dcKgicjtcWLLMr4r7ckFvdaO/Pearl-Hacks-2k19-Design?node-id=0%3A1","https://duckduckgo.com/"]
+websites = ["https://www.weddingwire.com/","https://duckduckgo.com/?q=gay+clubs+near+me&atb=v129-7fi&ia=web&iaxm=places","http://fortune.com/best-workplaces-for-diversity/","https://www.meetup.com/NYC-Girlfriend-Get-Togethers/"]
 
 
 webbrowser.open(random.choice(websites), new=0, autoraise=True)
